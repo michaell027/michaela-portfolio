@@ -29,28 +29,31 @@ export const metadata: Metadata = {
     "Programming",
     "Software Engineer",
   ],
-  //TODO: replace url after deployment
-  authors: [{ name: "Michaela Majorosova", url: "https://yourwebsite.com" }],
+  authors: [{ name: "Michaela Majorosova", url: "https://www.michaelamajorosova.xyz" }],
   creator: "Michaela Majorosova",
   publisher: "Michaela Majorosova",
   openGraph: {
-    title: "Portfolio | Michaela",
-    description:
-      "Modern portfolio showcasing fullstack development projects and skills",
-    //TODO: replace url after deployment
-    url: "https://yourwebsite.com",
-    siteName: "Portfolio",
-    images: [
-      {
-        //TODO: replace url after deployment
-        url: "https://yourwebsite.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Portfolio Open Graph Image",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
+      title: "Portfolio | Michaela",
+      description: "Modern portfolio showcasing fullstack development projects and skills",
+      type: "website",
+      url: "https://www.michaelamajorosova.xyz",
+      siteName: "Fullstack Developer Portfolio",
+      locale: "en_US",
+      images: [
+          {
+              url: "https://www.michaelamajorosova.xyz/api/og",
+              width: 1200,
+              height: 630,
+              alt: "Portfolio Preview",
+              type: "image/png",
+          },
+      ],
+  },
+  twitter: {
+     card: "summary_large_image",
+      title: "Portfolio | Fullstack Developer",
+      description: "Explore my fullstack development projects, skills, and experience",
+      images: ["https://www.michaelamajorosova.xyz/api/og"],
   },
 };
 
