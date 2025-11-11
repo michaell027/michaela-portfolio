@@ -1,6 +1,7 @@
 import { ImageResponse } from "next/og"
 
 export const runtime = "nodejs"
+export const revalidate = 3600
 
 export async function GET() {
     return new ImageResponse(
@@ -16,6 +17,7 @@ export async function GET() {
                 padding: "40px",
                 position: "relative",
                 overflow: "hidden",
+                fontFamily: "system-ui, -apple-system, sans-serif",
             }}
         >
             <div
