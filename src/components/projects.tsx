@@ -41,7 +41,15 @@ const projects = [
       tags: ["React", "Firebase", "TailwindCSS"],
       github: "https://github.com/michaell027/portfolio",
       demo: "https://michaela-majorosova.web.app",
-  }
+  },
+    {
+        title: "Wood & Whimsy",
+        description:
+            "This page is a modern website specializing in handmade wooden crafts and decor. It features a sleek design and user-friendly navigation.",
+        image: "wooden_gallery.webp",
+        tags: ["React", "Next.js", "TailwindCSS", "Vercel"],
+        demo: "https://wooden-gallery.vercel.app",
+    }
 ];
 
 export function Projects() {
@@ -144,17 +152,18 @@ export function Projects() {
                   </div>
                 </CardContent>
                 <CardFooter className="p-6 pt-0 flex gap-3">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    asChild
-                    className="flex-1 bg-transparent"
-                  >
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    {project.github ? (
+                        <Button
+                            variant="outline"
+                            size="sm"
+                            asChild
+                            className="flex-1 bg-transparent"
                     >
+                            <a
+                                href={project.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                         <svg
                             className="mr-2 h-4 w-4"
                             role="img"
@@ -163,11 +172,12 @@ export function Projects() {
                             fill="currentColor"
                         >
                             <title>GitHub</title>
-                            <path d={siGithub.path} />
+                            <path d={siGithub.path}/>
                         </svg>
-                      Code
-                    </a>
-                  </Button>
+                                Code
+                            </a>
+                        </Button>
+                    ) : null}
 
                   <div className="flex-1">
                     <Button
