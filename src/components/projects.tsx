@@ -42,14 +42,14 @@ const projects = [
       github: "https://github.com/michaell027/portfolio",
       demo: "https://michaela-majorosova.web.app",
   },
-    {
-        title: "Wood & Whimsy",
-        description:
-            "This page is a modern website specializing in handmade wooden crafts and decor. It features a sleek design and user-friendly navigation.",
-        image: "wooden_gallery.webp",
-        tags: ["React", "Next.js", "TailwindCSS", "Vercel"],
-        demo: "https://wooden-gallery.vercel.app",
-    }
+  {
+      title: "Wood & Whimsy",
+      description:
+          "This page is a modern website specializing in handmade wooden crafts and decor. It features a sleek design and user-friendly navigation.",
+      image: "wooden_gallery.webp",
+      tags: ["React", "Next.js", "TailwindCSS", "Vercel"],
+      demo: "https://wooden-gallery.vercel.app",
+  }
 ];
 
 export function Projects() {
